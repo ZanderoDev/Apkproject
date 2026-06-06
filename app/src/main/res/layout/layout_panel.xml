@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
-            android:text="BOOST & CLEAN"
+            android:text="BOOST &amp; CLEAN"
             android:textSize="12sp"
             android:backgroundTint="#22FFFFFF"
             android:textColor="#FFFFFF"/>
