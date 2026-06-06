@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.AppCompat.NoActionBar" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#1A1A1A</item>
+        <item name="colorSecondary">#22FFFFFF</item>
+    </style>
+</resources>

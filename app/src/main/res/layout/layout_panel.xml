@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bg">
+
+    <ImageView
+        android:id="@+id/anime_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_anime" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GAME SPACE LITE"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_ram"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RAM: 0%"
+                android:textColor="#00FF00" />
+
+            <TextView
+                android:id="@+id/txt_temp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SUHU: 0°C"
+                android:textColor="#FFCC00" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_boost"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="BOOST & CLEAN"
+            android:textSize="12sp"
+            android:backgroundTint="#22FFFFFF"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btn_hide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="HIDE PANEL"
+            android:textSize="12sp"
+            android:backgroundTint="#44FF0000"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</FrameLayout>
