@@ -65,10 +65,10 @@ class _MembersScreenState extends State<MembersScreen> {
                   child: Column(
                     children: [
                       Lottie.asset('assets/lottie/empty.json', width: 110, height: 110),
-                      SizedBox(height: 12),
-                      Text('Belum ada data anggota', style: TextStyle(fontWeight: FontWeight.w700)),
-                      SizedBox(height: 6),
-                      Text('Tekan Tambah untuk membuat data baru.', style: TextStyle(color: AppTheme.muted)),
+                      const SizedBox(height: 12),
+                      const Text('Belum ada data anggota', style: TextStyle(fontWeight: FontWeight.w700)),
+                      const SizedBox(height: 6),
+                      const Text('Tekan Tambah untuk membuat data baru.', style: TextStyle(color: AppTheme.muted)),
                     ],
                   ),
                 ),
@@ -129,7 +129,7 @@ class _MembersScreenState extends State<MembersScreen> {
                       ? 'Nama wajib diisi'
                       : null,
                 ),
-                const SizedBox(height: 12),
+                const const SizedBox(height: 12),
                 TextFormField(
                   controller: className,
                   decoration: const InputDecoration(labelText: 'Kelas'),
@@ -137,7 +137,7 @@ class _MembersScreenState extends State<MembersScreen> {
                       ? 'Kelas wajib diisi'
                       : null,
                 ),
-                const SizedBox(height: 12),
+                const const SizedBox(height: 12),
                 TextFormField(
                   controller: phone,
                   keyboardType: TextInputType.phone,

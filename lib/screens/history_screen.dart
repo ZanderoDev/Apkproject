@@ -58,10 +58,10 @@ class HistoryScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     Lottie.asset('assets/lottie/empty.json', width: 110, height: 110),
-                    SizedBox(height: 12),
-                    Text('Belum ada riwayat', style: TextStyle(fontWeight: FontWeight.w700)),
-                    SizedBox(height: 6),
-                    Text(
+                    const SizedBox(height: 12),
+                    const Text('Belum ada riwayat', style: TextStyle(fontWeight: FontWeight.w700)),
+                    const SizedBox(height: 6),
+                    const Text(
                       'Data akan muncul setelah anggota melakukan absensi.',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: AppTheme.muted),
@@ -134,7 +134,7 @@ class _DaySection extends StatelessWidget {
           ),
         ),
         ...records.map((record) => _AttendanceTile(record: record)),
-        const SizedBox(height: 12),
+        const const SizedBox(height: 12),
       ],
     );
   }
